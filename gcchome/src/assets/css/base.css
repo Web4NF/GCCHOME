@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  /*font-family: Microsoft YaHei, sans-serif; */
+  /*font-family: SourceHanSansTC-Normal;*/
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 1200px;
+  /* overflow: auto; */
+}
+
+.contents {
+  width: 100% !important;
+}
+
+/*@font-face {*/
+
+/*font-family: "SourceHanSansTC-Normal";*/
+
+/*font-weight: normal;*/
+
+/*font-style: normal;*/
+
+/*src: url("../font/SourceHanSansTC-Normal.otf");*/
+
+/*}*/
+
+/* elementUI 去掉 头部 内容、底部的padding */
+
+.el-header {
+  padding: 0 !important;
+}
+
+.el-main {
+  padding: 0 !important;
+  overflow: visible;
+}
+
+.el-footer {
+  padding: 0 !important;
+}
+
+.el-menu--horizontal {
+  border-bottom: solid 0;
+}
+
+.el-menu--horizontal>.el-menu-item a,
+.el-menu--horizontal>.el-menu-item a:hover {
+  text-decoration: none;
+}
+
+.el-submenu__title *,
+.el-menu-item * {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 正常标题字体、颜色 */
+
+.title-normal {
+  font-size: 18px;
+  color: #2a2119;
+}
+
+/* 高亮选中标题字体、颜色 */
+
+.title-active {
+  font-size: 18px;
+  color: #018f3c;
+}
+
+/* 详情灰色字体色值 */
+
+.detail-title {
+  color: #5a5b5c;
+  font-size: 16px;
+}
+
+/* 详情浅灰色字体色值 */
+
+.detail-info {
+  color: #9d9e9f;
+  font-size: 14px;
+}
+
+/*补充样式*/
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.table:before {
+  content: "";
+  display: table;
+}
+
+div.main {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul,
+ol,
+dl,
+dd {
+  list-style: none;
+}
+
+.lf {
+  float: left;
+}
+
+.rg {
+  float: right;
+}
+
+.overhide {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overhide2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.width_auto {
+  width: auto;
+  display: inline-block;
+}
+
+/* 字体设置 */
+
+.font18 {
+  font-size: 18px;
+  color: #333333;
+}
+
+.fontInline18 {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* 个人中心样式合集 */
+
+.green {
+  background-color: #018f3c;
+}
+
+.greenColor {
+  background-color: #018f3c;
+  color: white;
+}
+
+.greenbtn {
+  background-color: rgb(80, 206, 122);
+}
+
+.redbtn {
+  background-color: rgb(231, 0, 18);
+}
+
+.yellowbtn {
+  background-color: rgb(243, 152, 1);
+}
+
+.bluebtn {
+  background-color: rgb(117, 208, 255);
+}
+
+.allbtn {
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 取消按钮 */
+
+.allclose {
+  border: 1px solid #cccccc;
+  color: #cccccc;
+}
+
+/* 保存按钮 */
+
+.allsave {
+  background-color: #018f3c;
+  color: white;
+}
+
+.allAlign {
+  display: flex;
+  align-items: center;
+}
+
+.downLoad {
+  display: inline-block;
+  width: 80px;
+  height: 32px;
+  background: #67c23a;
+  border-radius: 3px;
+  color: white !important;
+  text-align: center;
+  line-height: 32px;
+  font-size: 12px !important;
+  cursor: pointer;
+}
+
+/* 全局修改 elementUI  alert 居中样式 */
+
+.el-message-box {
+  vertical-align: baseline !important;
+}
+
+/* 全局修改 时间 至遮挡 */
+
+.el-date-editor .el-range-separator {
+  width: 6% !important;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 统一面包屑 */
+
+.breads a:hover {
+  color: #018f3c !important;
+}
+
+/* 个人中心面包屑 */
+
+p.bread-crumb {
+  box-shadow: 0 0 8px rgba(168, 165, 165, 0.5);
+  margin-bottom: 10px;
+  text-align: left;
+  height: 60px;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 20px;
+  color: #333333;
+}
+
+p.bread-crumb a {
+  font-size: 16px;
+  color: #333333;
+}
+
+p.bread-crumb span {
+  color: #333 !important;
+  font-size: 16px;
+}
+
+p.bread-crumb a:hover {
+  color: #018f3c;
+}
+
+.noneImg {
+  text-align: center;
+}
