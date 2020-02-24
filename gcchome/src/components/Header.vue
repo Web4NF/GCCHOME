@@ -1,40 +1,39 @@
 <template>
-  <div class="box_header">
-    <div class="header-top">
-      <!-- 顶部logo -->
-      <div>
-        <img src="../../public/img/GCCLOGO.jpg" />
-      </div>
-      <!-- 顶部导航 -->
-      <div class="navbar">
-        <el-menu
-          :default-active="activeIndex"
-          class="el-menu-demo"
-          mode="horizontal"
-          @select="handleSelect"
-        >
-          <el-menu-item index="1">首页</el-menu-item>
-          <el-submenu index="2">
-            <template slot="title">公司介绍</template>
-            <el-menu-item index="2-1">公司简介</el-menu-item>
-            <el-menu-item index="2-2">母公司简介</el-menu-item>
-            <el-menu-item index="2-3">南京市简介</el-menu-item>
-          </el-submenu>
-          <el-submenu index="3">
-            <template slot="title">主要业务</template>
-            <el-menu-item index="3-1">公司简介</el-menu-item>
-            <el-menu-item index="3-2">母公司简介</el-menu-item>
-            <el-menu-item index="3-3">南京市简介</el-menu-item>
-          </el-submenu>
-          <el-menu-item index="4">成功案例</el-menu-item>
-          <el-menu-item index="5">新闻资讯</el-menu-item>
-          <el-menu-item index="6">联系我们</el-menu-item>
-        </el-menu>
-      </div>
-      <!-- 顶部搜索/语言 -->
-      <div class="search">
-        <i class="el-icon-search"></i>
-      </div>
+  <div class="header-top">
+    <!-- 顶部logo -->
+    <div>
+      <img src="../../public/img/GCCLOGO.jpg" />
+    </div>
+    <!-- 顶部导航 -->
+    <div class="navbar">
+      <el-menu
+        :default-active="$route.path"
+        class="el-menu-demo"
+        mode="horizontal"
+        router
+        @select="handleSelect"
+      >
+        <el-menu-item index="/home">首页</el-menu-item>
+        <el-submenu index="2">
+          <template slot="title">公司介绍</template>
+          <el-menu-item index="/CompanyProfile">公司简介</el-menu-item>
+          <el-menu-item index="/MCompanyProfile">母公司简介</el-menu-item>
+          <el-menu-item index="/NanJingProfile">南京市简介</el-menu-item>
+        </el-submenu>
+        <el-submenu index="3">
+          <template slot="title">主要业务</template>
+          <el-menu-item index="3-1">公司简介</el-menu-item>
+          <el-menu-item index="3-2">母公司简介</el-menu-item>
+          <el-menu-item index="3-3">南京市简介</el-menu-item>
+        </el-submenu>
+        <el-menu-item index="/SuccessfulCase">成功案例</el-menu-item>
+        <el-menu-item index="/News">新闻资讯</el-menu-item>
+        <el-menu-item index="/Contact">联系我们</el-menu-item>
+      </el-menu>
+    </div>
+    <!-- 顶部搜索/语言 -->
+    <div class="search">
+      <i class="el-icon-search"></i>
     </div>
   </div>
 </template>

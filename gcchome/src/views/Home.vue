@@ -127,8 +127,8 @@ export default {
 
 .el-header {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   z-index: 1030;
 }
 /* 公共标题样式 */
